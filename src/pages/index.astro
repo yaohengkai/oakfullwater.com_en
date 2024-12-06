@@ -1,0 +1,387 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Startup Landing Page',
+};
+---
+
+<Layout metadata={metadata}>
+
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline=""
+    image={{
+      src: '~/assets/images/main.JPG',
+      alt: 'Caos Image',
+    }}
+  >
+    <Fragment slot="title">
+      <span class="hidden xl:inline">Inventor </span> of Water-driven electroless water purification
+      <span class="text-accent dark:text-white highlight"> Redefine </span> Electricity-free Reverse Osmosis System
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Let healthy and safe water purification flow into every family
+    </Fragment>
+  </Hero>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="About us"
+    subtitle="We are Qingdao OAKFULL Water Purification Equipment Co., Ltd, with more than 10 years of experience in the production of water purification products and European supporting, with its own plant 17,000 square meters and its own trademark OAKFULL and patents, independent purification workshop, research and development to the production of a one-stop manufacturer of non-electricity water purifiers, wholeheartedly at your service."
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="Company representative data"
+    subtitle="The following data reflects the company's rich production experience, technical hard power and users' trust in us"
+    stats={[
+      { title: 'meter square factory', amount: '17000+' },
+      // { title: '丰富经验员工', amount: '500+' },
+      { title: 'years of experience in Europe', amount: '10+' },
+      { title: 'years of company history', amount: '30+' },
+    ]}
+  />
+
+  <!-- Brands Widget ****************** -->
+
+  <Brands
+    title="Domestic and international certifications"
+    subtitle=" "
+    icons={[]}
+    images={[
+      {
+        src: '~/assets/images/nsf.png',
+        alt: 'NSF',
+      },
+      {
+        src: '~/assets/images/CE.png',
+        alt: 'CE',
+      },
+      {
+        src: '~/assets/images/MA.jpg',
+        alt: 'MA',
+      },
+      {
+        src: '~/assets/images/ilac-mra.png',
+        alt: 'ilac-mra',
+      },
+      {
+        src: '~/assets/images/CNAS.jpg',
+        alt: 'CNAS',
+      },
+      // {
+      //   src: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_1280.png',
+      //   alt: 'Node JS',
+      // },
+      // {
+      //   src: 'https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751_1280.png',
+      //   alt: 'Google',
+      // },
+      // {
+      //   src: 'https://cdn.pixabay.com/photo/2021/12/06/13/45/meta-6850393_1280.png',
+      //   alt: 'Meta',
+      // },
+      // {
+      //   src: 'https://cdn.pixabay.com/photo/2013/01/29/22/53/yahoo-76684_1280.png',
+      //   alt: 'Yahoo',
+      // },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <!-- <Features2
+    title="What services do we provide?"
+    subtitle="We offer a wide range of website templates that suit various industries and purposes such as business, portfolio, e-commerce, blog, etc."
+    items={[
+      {
+        title: 'Installation Instructions',
+        description:
+          'Offer clear instructions on how to download the purchased templates and install them on various website platforms or content management systems.',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Demo and Previews',
+        description:
+          'Provide interactive demos and previews that allow customers to see how their chosen template will look and function before making a purchase.',
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Technical Support',
+        description:
+          'Providing customer support for any technical issues related to the templates or their implementation.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2> -->
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    title="Our Product Advantages"
+    subtitle="The first water pressure tank, low-pressure four-stage depth filtration, desalination rate up to 98%"
+    columns={3}
+    items={[
+      {
+        title: 'No electricity required',
+        description:
+          'Electricity-free water purifier does not involve circuit work, eliminating the risk of leakage or circuit failure, especially suitable for families with elderly and children. Water-driven mechanical principle operation, energy-saving, low-carbon, environmentally friendly. The overall structure is simpler, with fewer failure points and longer service life.',
+        icon: 'tabler:artboard',
+      },
+      {
+        title: 'Primary water efficiency',
+        description:
+        'The water production rate reaches the highest level specified in the national standard, and adopts more advanced reverse osmosis membrane and design scheme, with higher filtration efficiency and usage performance. For every 100 liters of raw water filtered, at least 60 liters can be used as pure water, with less waste water and higher water utilization.',
+        icon: 'tabler:plug-connected',
+      },
+      {
+        title: 'Four-stage filtration',
+        description:
+          'Multi-stage filtration purifies the water layer by layer, ensuring the removal of various harmful substances in the water. Front folded pp cartridge and front Jacoby activated carbon share the burden of filtration and extend the service life of reverse osmosis membrane. The rear acid-washed Jacoby activated carbon cartridge further optimizes the taste of the water.',
+        icon: 'tabler:adjustments-horizontal',
+      },
+      {
+        title: 'Constant pressure and steady current',
+        description:
+          'The first water pressure tank with imported low-pressure reverse osmosis membrane, compared with the traditional air pressure tank, constant water flow to avoid the water out of the fast and slow, the use of more comfortable, suitable for direct drinking or high-flow scenarios. Low-pressure osmosis keeps the reverse osmosis membrane in the best filtration state, ensuring efficient removal of bacteria, viruses, heavy metals and other impurities.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Zero noise',
+        description:
+          'No electricity, no pump with precision mechanical principles to achieve no noise or very low noise operation state, to provide users with a quieter, more comfortable use of the experience.',
+        icon: 'tabler:arrows-right-left',
+      },
+      {
+        title: 'Easy to install',
+        description:
+          'The main body of the water purifier is designed as an integrated structure, which reduces the number of external piping connections and makes installation neater. With the use of quick couplings, piping installation as well as cartridge replacement is simply inserted without the use of special tools or specialized knowledge. Through the video guide, girls can also install on their own.',
+        icon: 'tabler:plug-connected',
+      },
+      {
+        title: 'Space-saving',
+        description: 
+          'Ideal for installation under the kitchen sink or on the countertop, it takes up minimal space. The water purifier body integrates all filtration modules and piping, reducing the size of external connections and add-ons and maximizing space savings in the home or office.',
+        icon: 'tabler:plug-connected',
+      },
+      {
+        title: 'Mother and Child Direct Drinking',
+        description:
+          'Reverse osmosis water purifier is considered to be the most suitable water purification equipment for mothers and babies because of its high-precision filtration performance. The filtration precision of reverse osmosis membrane (RO membrane) reaches 0.0001 micron, which can effectively remove bacteria, viruses, heavy metals, pesticide residues, antibiotics, chlorides and other tiny pollutants in the water, and it does not contain potentially hazardous substances for infants and young children. The taste of filtered water is softer and more acceptable to infants and children.',
+        icon: 'tabler:plug-connected',
+      },
+      {
+        title: 'High volume',
+        description:
+          'Low-pressure osmosis, 150-gallon reverse osmosis membrane achieves an electrified 800-gallon water output, with an average flow rate of up to 2.5 L per minute.Compared to ordinary water purifiers, the volume of water provided by the ultra-high-flow water purifier greatly shortens the waiting time for environments that require quick access to drinking or culinary water.',
+        icon: 'tabler:plug-connected',
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <!-- <FAQs
+    title="Frequently Asked Questions"
+    items={[
+      {
+        title: 'What are landing page templates?',
+        description:
+          'Landing page templates are pre-designed web page layouts that are specifically created to serve as a foundation for building effective landing pages. These templates are designed to capture the attention of visitors and guide them towards a specific action or goal, such as signing up for a newsletter, making a purchase, or downloading a resource.',
+      },
+      {
+        title: 'Why should I use a template?',
+        description:
+          'Some of the advantages are that they provide a ready-to-use structure,  saving you significant time. Are designed with user-friendliness in mind and provide a cost-effective alternative, saving you money while still delivering a quality result.',
+      },
+      {
+        title: 'Can I preview templates before buying?',
+        description:
+          'Yes, the templates allow you to preview them before making a purchase. There is a "Demo" button associated with each template.',
+      },
+      {
+        title: 'Do I need technical skills to use a template?',
+        description:
+          'Advanced technical skills are not required to use a template, but having a basic understanding of web navigation and familiarity with using online tools can still be beneficial. If you have more specific customization needs, you might need to consult guides or reach out to customer support for assistance.',
+      },
+      {
+        title: 'Can I use the template on multiple websites?',
+        description:
+          'No, the template comes with a single-use license, meaning you can use the template on one website or project only. Using the template on additional websites would require purchasing additional licenses.',
+      },
+      {
+        title: 'What if I need help with customization?',
+        description:
+          "The templates provides a comprehensive step-by-step guide that walk you through the customization process. If you still have doubts, you can reach out to our customer support team. They can answer your questions, provide guidance on customization, and address any issues you're facing.",
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs> -->
+
+  <!-- Features3 Widget ************** -->
+
+  <!-- <Features3
+    title="Let us know how we can help"
+    subtitle="We’re here to help and answer any question you might have."
+    columns={4}
+    items={[
+      {
+        title: 'Phone',
+        icon: 'tabler:phone',
+        callToAction: {
+          target: '_blank',
+          text: 'Call us',
+          href: '/',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Email',
+        icon: 'tabler:mail',
+        callToAction: {
+          target: '_blank',
+          text: 'Write to us',
+          href: '/',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Chat with sales',
+        icon: 'tabler:message-circle',
+        callToAction: {
+          target: '_blank',
+          text: 'Start chatting',
+          href: '/',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Chat with support',
+        icon: 'tabler:message-circle',
+        callToAction: {
+          target: '_blank',
+          text: 'Start chatting',
+          href: '/',
+          variant: 'link',
+        },
+      },
+    ]}
+  /> -->
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Real reviews from consumers"
+    testimonials={[
+      {
+        testimonial: `As a startup CEO, I am very time and cost sensitive. After getting this powerless reverse osmosis water purifier, my biggest feeling is that its no-electricity-needed feature is especially hassle-free, so I don't have to worry about electricity bills or extra wiring, whether it's in the office or at home. At the same time, its maintenance-free design allows me to focus on my work without having to check or replace parts frequently. The water filtered with it is so clear and flavorful that every time I drink it, it's like a treat, simply the best partner for an efficient life.`,
+        name: 'Emily Kennedy',
+        job: 'Startup CEO',
+        image: {
+          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+          alt: 'Emily Kennedy Image',
+        },
+      },
+      {
+        testimonial: `As a full-time mom, I value the safety of my family's drinking water, and I also want to save energy by using the equipment at home. This reverse osmosis water purifier allows me to completely free my hands, it almost does not need maintenance, there is no complex operation steps, very suitable for my kind of "technical illiteracy". What's more, its quiet performance is particularly good, so you don't have to worry about disturbing your children when it's quiet at night. The filtered water is sweet and refreshing, so you can cook and make milk powder with greater confidence, which is really a good thing to recommend for the family.`,
+        name: 'Sarah Hansen',
+        job: 'Full-time mom',
+        image: {
+          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Sarah Hansen Image',
+        },
+      },
+      {
+        testimonial: `As a college instructor, I have high expectations for quality and durability of products. What impresses me about this electroless reverse osmosis water purifier is its long lifespan and the fact that I hardly need to worry about replacement or maintenance after purchase, which is perfectly in line with my principle of pursuing cost-effective products. In addition, its filtered water quality is pure and tastes very good, which is a pleasure to use for making tea. What's more, it adopts a non-electric design, which is not only environmentally friendly, but also avoids the potential safety hazards that may be brought about by the use of electric equipment, which makes me particularly satisfied.`,
+        name: 'Mark Wilkinson',
+        job: 'College Instructor',
+        image: {
+          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
+          alt: 'Mark Wilkinson Image',
+        },
+      },
+    ]}
+    callToAction={{
+      target: '_blank',
+      text: 'More reviews...',
+      href: '#',
+      icon: 'tabler:chevron-right',
+    }}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <!-- <CallToAction
+
+    actions={[
+      {
+        variant: 'primary',
+        target: '_blank',
+        text: 'Get templates',
+        href: 'https://github.com/onwidget/astrowind',
+        icon: 'tabler:download',
+      },
+    ]}
+  >
+    <Fragment slot="title">Be a part of our vision</Fragment>
+
+    <Fragment slot="subtitle">
+      Discover a dynamic work environment, unparalleled growth opportunities, and the chance to make a meaningful
+      impact.
+    </Fragment>
+  </CallToAction> -->
+
+    <!-- Features2 Widget ************** -->
+
+    <Features2
+    title="Contact us"
+    items={[
+      {
+        title: 'Phone',
+        description: '+86 0532-89975888',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Email',
+        description: 'sales@oakfull.cn',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Address',
+        description: 'No.3, Qipanshan Road, Huangdao District, Qingdao, Shandong Province, China',
+        icon: 'tabler:map-pin',
+      },
+    ]}
+  />
+
+</Layout>

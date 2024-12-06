@@ -1,0 +1,79 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Contact',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText tagline="Contact" title="Welcome to contact us!" />
+
+  <ContactUs
+    id="form"
+    title="Leave a message!"
+    subtitle="For general questions, check out the Quick Questions and Answers (Q&A) section. Maybe you can find a solution there directly! If not, our team will be happy to answer it for you."
+    inputs={[
+      {
+        type: 'text',
+        name: 'name',
+        label: 'name',
+      },
+      {
+        type: 'email',
+        name: 'email',
+        label: 'email',
+      },
+    ]}
+    textarea={{
+      label: 'message',
+    }}
+    disclaimer={{
+      label:
+        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+    }}
+    description="Our support team will typically contact you within 24 hours."
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Happy to help you!"
+    items={[
+      // {
+      //   title: '产品帮助',
+      //   description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+      // },
+      // {
+      //   title: '联系销售',
+      //   description:
+      //     'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+      // },
+      // {
+      //   title: '技术支持',
+      //   description:
+      //     'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
+      // },
+      {
+        title: 'Phone',
+        description: '+86 0532-89975888',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Email',
+        description: 'contact@oakfull.cn',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Address',
+        description: 'No.3, Qipanshan Road, Huangdao District, Qingdao, Shandong Province, China',
+        icon: 'tabler:map-pin',
+      },
+    ]}
+  />
+</Layout>

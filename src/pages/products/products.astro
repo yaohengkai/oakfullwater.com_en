@@ -1,0 +1,276 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Products',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+  <!-- Content Widget ****************左 -->
+
+  <Content
+    isReversed
+    tagline="Products"
+    title="Extensive whole-house water purification product line"
+    
+    items={[
+      // {
+      //   title: '高泥沙保存能力',
+      //   description:
+      //     'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+      // },
+      // {
+      //   title: '低水压大流量',
+      //   description:
+      //     'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+      // },
+      // {
+      //   title: '高效过滤泥沙重金属',
+      //   description:
+      //     'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+      // },
+    ]}
+    id="prefilter"
+    image={{
+      // src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      // alt: 'Colorful Image',
+      src: '~/assets/images/RO-system.png',
+      alt: 'Colorful Image',
+    }}
+  >
+    
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Transparent water pre-filter</h3>
+      Composite cartridge pp cotton plus activated carbon (fusion of pre-filter and central water purifier), requires less installation space, lower cost, and protects the safety of subsequent water use. Strong durability high efficiency filtration to protect whole house water facilities and downstream filters.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget ****************右 -->
+
+  <Content
+    
+    isAfterContent
+    items={[
+      // {
+      //   title: 'High level of customization',
+      //   description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+      // },
+      // {
+      //   title: 'Multiple layout possibilities',
+      //   description:
+      //     'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+      // },
+      // {
+      //   title: 'Fully responsive design',
+      //   description:
+      //     "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+      // },
+      // {
+      //   title: 'Integration of media',
+      //   description:
+      //     'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+      // },
+    ]}
+    id="ultrafiltration"
+    image={{
+      // src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      // alt: 'Colorful Image',
+      src: '~/assets/images/ultrafiltration.png',
+      alt: 'Colorful Image',
+    }}
+  >
+    
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ultrafiltration water purifier</h3>
+      Compared with reverse osmosis retains the minerals in the water, mineral water quality, higher water efficiency, no waste water, suitable for areas with better water quality. The filter cartridge adopts spin-card type, users can replace it in seconds, and the colors correspond to each other, so it is not easy to make mistakes.
+
+    </Fragment>
+    
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+    <!-- Content Widget ****************左 -->
+
+    <Content
+    isReversed
+    items={[
+      {
+        title: 'Steady pressure',
+        description:
+          'The first water pressure tank, compared with the traditional water storage tanks rely on gas pressure to drive the water flow of the device, the pressure is not stable, resulting in unstable flow rate. 2 years or so need to be filled with gas, after-sales costs are high.',
+      },
+      {
+        title: 'Low pressure, high flow',
+        description:
+          'The flow rate of water purification of Oakfull electroless reverse osmosis water purifier can reach a high flow rate of 2.5L/Min, and the TDS removal rate can be stabilized at 98% for a long period of time. To achieve the same water quality and flow rate of electric water purifiers on the market are at least 800G reverse osmosis membrane, while AOKF self-developed technology, with 150G low-pressure reverse osmosis membrane can be realized. Lower cost and better water quality.',
+      },
+      {
+        title: 'Protect from high pressure',
+        description:
+          'Bearing pressure of more than 35 kilograms, 100,000 times water hammer, through the national cnas certification, higher than the overseas nsf standard.',
+      },
+      {
+        title: 'Safer with electroless',
+        description:
+          'Since there are no motorized parts, maintenance is relatively simple and the service life is long.',
+      },
+    ]}
+    id="RO-system"
+    image={{
+      // src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      // alt: 'Colorful Image',
+      src: '~/assets/images/RO-system.png',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Electricity-free Reverse Osmosis water purifier</h3>
+      
+
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget ****************右 -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Stable',
+        description: 'Due to the absence of electrical components, powerless water softeners have a low failure rate, are stable and are not affected by power fluctuations or damage to electrical equipment in the long term.',
+      },
+      {
+        title: 'Multi-scenario applicability',
+        description:
+          "This type of water softener is suitable for a number of environments such as homes, office buildings, and commercial establishments, and is especially practical in places where electricity is unstable or where access to a power source is not possible.",
+      },
+      {
+        title: 'Safer',
+        description:
+          'There is no current passing through the machine and there is no risk of electrical leakage or fire, making it safer to use.',
+      },
+    ]}
+    id="softerner"
+    image={{
+      // src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      // alt: 'Colorful Image',
+      src: '~/assets/images/ultrafiltration.png',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Electricity-free water softener</h3>
+      Electricity-free water softeners do not require electrical drive, relying entirely on water flow and mechanical principles to work, so they do not generate power consumption, saving energy, and do not require batteries or sockets, which is good for the environment.
+
+
+
+
+    </Fragment>
+    
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+      <!-- Content Widget ****************左 -->
+
+      <Content
+      isReversed
+      items={[
+        {
+          title: 'PP cotton cartridge',
+          description:
+            'Step three-layer PP cotton, filtration area and dirt-holding capacity is more than 2 times higher than conventional PP cartridge. The filtration precision is ≤5 microns, highly effective in removing suspended solids, sediment, rust and other objects visible to the naked eye.',
+        },
+        {
+          title: 'Front Carbon Filter',
+          description:
+            'Imported Jacoby Coconut Shell Activated Carbon, ultra-fine particles sintered at high temperatures into columns, with the same shape and size, higher carbon content and greater water treatment capacity. Superior performance to obtain excellent ability to remove residual chlorine, volatile organic compounds, odor.',
+        },
+        {
+          title: 'Reverse osmosis membrane cartridge',
+          description:
+            'Amide multilayer composite membrane, filtration precision ≤0.1nm (0.0001 micron). Effectively removes ≥99% of lead, mercury, cadmium and other heavy metals ≥99.6 of bacteria and viruses.',
+        },
+        {
+          title: 'Post Carbon Filter',
+          description:
+            'Super high iodine value imported activated carbon excellent adsorption and ion exchange capacity, efficiently removes residual gas, chromaticity, three organic compounds (carcinogenic, teratogenic, mutagenic) and other harmful volatile organic compounds. Four-stage combination of depth filtration technology, completely retain the beneficial minerals in the water, but also has a full and sweet taste.',
+        },
+        {
+          title: 'Strontium-rich mineralized carbon cartridge',
+          description:
+            'The cartridge contains strontium-rich ore or synthetic strontium ion-releasing material, which can slowly release strontium ions into the water, transforming ordinary water into mineralized water rich in strontium ions. Strontium is a trace element that is beneficial to the human body, helping to enhance bone density and improve bone health, and is particularly suitable for middle-aged and elderly people or those in need of mineral supplementation. In addition to strontium ions, the cartridge may also release other minerals beneficial to the human body (such as calcium, magnesium and potassium), making the water closer to the composition of natural mineral water and enhancing the taste and health value of the water.',
+        },
+        {
+          title: 'Ultra-filtration activated carbon composite cartridge',
+          description:
+            'Ultrafiltration membrane activated carbon composite cartridge, ultrafiltration membrane filtration precision between 0.001 micron (1 nanometer) to 0.1 micron. It can effectively retain bacteria, viruses, large organic molecules and colloids in solution, while allowing water molecules and some small molecules (such as salt ions) to pass through.',
+        },
+      ]}
+      id="cartridges"
+      image={{
+        // src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+        // alt: 'Colorful Image',
+        src: '~/assets/images/cartridges.png',
+        alt: 'Colorful Image',
+      }}
+    >
+      <Fragment slot="content">
+        <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Filter cartridge consumables</h3>
+        Strong durable high-efficiency filtration protects whole-house water fixtures and downstream filters.
+      </Fragment>
+  
+      <Fragment slot="bg">
+        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      </Fragment>
+    </Content>
+
+  <!-- CallToAction Widget *********** -->
+<!-- 
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get template',
+        href: 'https://github.com/onwidget/astrowind',
+        target: '_blank',
+        icon: 'tabler:download',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
+      waste more time! :P
+    </Fragment>
+  </CallToAction>
+   -->
+</Layout>
