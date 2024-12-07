@@ -13,23 +13,22 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-<!-- 
+
   <Hero
-    tagline="关于我们"
+    tagline="About us"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      src: '~/assets/images/oakfull-outside.jpg',
+      alt: 'oakfull-outside',
     }}
   >
     <Fragment slot="title">
-      为什么选择澳可富 <br />
-      <span class="text-accent dark:text-white highlight"> 从想法到产品</span>
+      R&D, production and marketing of an integrated electroless water purification manufacturer
     </Fragment>
 
     <Fragment slot="subtitle">
-      我们是青岛澳可富净水设备有限公司，拥有和欧洲配套10多年的净水产品生产经验，自有厂房17000平方和自有商标OAKFULL及专利，独立的净化车间，集研发到生产一站式无电净水器生产厂家，竭诚为您服务。
+      We are a professional water purifier manufacturer integrating product research and development, mold design and manufacturing, injection molding, production and marketing. Our company always takes technological innovation as the core, and is committed to providing high-quality water purification solutions for customers all over the world.
     </Fragment>
-  </Hero> -->
+  </Hero>
 
   <!-- Stats Widget ****************** -->
 
@@ -44,11 +43,11 @@ const metadata = {
   /> -->
 
   <!-- Features3 Widget ************** -->
-
+<!-- 
   <Features3
     tagline="About us"
     title="R&D, production and marketing of an integrated electroless water purification manufacturer"
-    subtitle=""
+    subtitle="We are a professional water purifier manufacturer integrating product research and development, mold design and manufacturing, injection molding, production and marketing. Our company always takes technological innovation as the core, and is committed to providing high-quality water purification solutions for customers all over the world."
     columns={3}
     isBeforeContent={true}
     items={[
@@ -71,80 +70,87 @@ const metadata = {
         icon: 'tabler:template',
       },
     ]}
+  /> -->
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+  title="Our Corporate culture"
+  subtitle="Corporate culture is both the link between internal collaboration and the soft power of external competition. A successful enterprise usually has a culture that matches its strategic goals, which not only attracts talented people, but also enhances market competitiveness and brand value."
+  items={[
+    {
+      title: 'Mission',
+      description:
+        'Building a Happy Enterprise',
+      icon: 'tabler:template',
+    },
+    {
+      title: 'Vision',
+      description:
+        'Let healthy and safe water purification flow into every family',
+      icon: 'tabler:template',
+    },
+    {
+      title: 'Value',
+      description:
+        'Craftsmanship, Customer First, Return to Society',
+      icon: 'tabler:template',
+    },
+  ]}
   />
 
+  <!-- <img src="/src/assets/images/oakfull-inside.jpg" alt="一只鸟"  height="200"> -->
+
   <!-- Features3 Widget ************** -->
-<!-- 
+
   <Features3
     columns={3}
     isAfterContent={true}
     items={[
       {
-        title: 'E-commerce',
+        title: 'The whole industry chain layout',
         description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
+          'From the conceptual design of the product, core technology research and development, to mold manufacturing, injection molding and mass production, all the links are completed by the company independently, to ensure a high degree of consistency in product quality and delivery efficiency.',
         icon: 'tabler:template',
       },
       {
-        title: 'Blog',
+        title: 'R&D Strength',
         description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
+          'We have an experienced R&D team that focuses on the cutting-edge development of water purification technologies, including reverse osmosis, ultrafiltration and water softener technologies, and regularly launches innovative products to meet market demands.  ',
         icon: 'tabler:template',
       },
       {
-        title: 'Business',
+        title: 'Molds and Injection Molding',
         description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
+          'Equipped with modern mold manufacturing workshop and high-precision injection molding equipment to ensure the precision and durability of product parts from design to finished products.',
         icon: 'tabler:template',
       },
       {
-        title: 'Branding',
+        title: 'Production capacity',
         description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
+          'The production base adopts intelligent assembly line operation with efficient scale production capacity, while strictly implementing ISO quality management system to ensure the reliability of each product.',
         icon: 'tabler:template',
       },
       {
-        title: 'Medical',
+        title: 'Market Support',
         description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
+          'We have established sales networks in many regions around the world, and work with our partners to promote the development of the water purifier market and bring consumers a healthier and more secure water purification experience.',
         icon: 'tabler:template',
       },
       {
-        title: 'Fashion Design',
+        title: 'Product Features',
         description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
+          'We offer a diversified range of water purification products, including home water purifiers, commercial water purification equipment, filter cartridges and accessories to meet the needs of different scenarios. In addition, we can also provide customized design and production services according to customer requirements.',
         icon: 'tabler:template',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
+      src: '~/assets/images/oakfull-inside.jpg',
+      alt: 'oakfull-inside',
     }}
-  /> -->
+  />
 
-  <!-- Steps2 Widget ****************** -->
-<!-- 
-  <Steps2
-    title="价值观"
-    subtitle=""
-    items={[
-      {
-        title: '匠心精神',
-        description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
-      },
-      {
-        title: '客户至上',
-        description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
-      },
-      {
-        title: '回报社会',
-        description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
-      },
-    ]}
-  /> -->
+  
 
   <!-- Steps2 Widget ****************** -->
 <!-- 
@@ -223,5 +229,5 @@ const metadata = {
         icon: 'tabler:headset',
       },
     ]}
-  /> -->
+  />  -->
 </Layout>

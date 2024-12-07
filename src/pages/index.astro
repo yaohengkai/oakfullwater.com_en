@@ -15,7 +15,7 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import { YouTube } from 'astro-embed';
 
 const metadata = {
-  title: 'Startup Landing Page',
+  title: 'Oakfull Homepage',
 };
 ---
 
@@ -31,8 +31,8 @@ const metadata = {
     }}
   >
     <Fragment slot="title">
-      <span class="hidden xl:inline">Inventor </span> of Water-driven electroless water purification
-      <span class="text-accent dark:text-white highlight"> Redefine </span> Electricity-free Reverse Osmosis System
+      <span class="hidden xl:inline"> Inventor </span> of Water-driven electroless water purification
+      <span class="text-accent dark:text-white highlight"> Redefine </span> Reverse Osmosis System
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -63,7 +63,24 @@ const metadata = {
       { title: 'years of company history', amount: '30+' },
     ]}
   />
+  <!-- Hero Widget ******************* -->
 
+  <Hero
+    tagline=""
+    image={{
+      src: '~/assets/images/oakfull-system.PNG',
+      alt: 'oakfull-system',
+    }}
+  >
+    <!-- <Fragment slot="title">
+      水驱无电净水<span class="hidden xl:inline">发明者</span>
+      <span class="text-accent dark:text-white highlight">重新定义</span>无电RO机
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      让健康、安全的净水流入每一个家庭
+    </Fragment> -->
+  </Hero>
   <!-- Brands Widget ****************** -->
 
   <Brands
@@ -174,10 +191,10 @@ const metadata = {
         icon: 'tabler:rocket',
       },
       {
-        title: 'Zero noise',
+        title: 'Mother and Child Direct Drinking',
         description:
-          'No electricity, no pump with precision mechanical principles to achieve no noise or very low noise operation state, to provide users with a quieter, more comfortable use of the experience.',
-        icon: 'tabler:arrows-right-left',
+          'Reverse osmosis water purifier is considered to be the most suitable water purification equipment for mothers and babies because of its high-precision filtration performance. The filtration precision of reverse osmosis membrane (RO membrane) reaches 0.0001 micron, which can effectively remove bacteria, viruses, heavy metals, pesticide residues, antibiotics, chlorides and other tiny pollutants in the water, and it does not contain potentially hazardous substances for infants and young children. The taste of filtered water is softer and more acceptable to infants and children.',
+        icon: 'tabler:plug-connected',
       },
       {
         title: 'Easy to install',
@@ -192,10 +209,10 @@ const metadata = {
         icon: 'tabler:plug-connected',
       },
       {
-        title: 'Mother and Child Direct Drinking',
+        title: 'Zero noise',
         description:
-          'Reverse osmosis water purifier is considered to be the most suitable water purification equipment for mothers and babies because of its high-precision filtration performance. The filtration precision of reverse osmosis membrane (RO membrane) reaches 0.0001 micron, which can effectively remove bacteria, viruses, heavy metals, pesticide residues, antibiotics, chlorides and other tiny pollutants in the water, and it does not contain potentially hazardous substances for infants and young children. The taste of filtered water is softer and more acceptable to infants and children.',
-        icon: 'tabler:plug-connected',
+          'No electricity, no pump with precision mechanical principles to achieve no noise or very low noise operation state, to provide users with a quieter, more comfortable use of the experience.',
+        icon: 'tabler:arrows-right-left',
       },
       {
         title: 'High volume',
