@@ -9,7 +9,7 @@ tags:
   - Sponsors
   - Tennis Tournament
 metadata:
-  canonical: https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css
+  canonical: https://oakfull.cn/20240603-tennis-competetion
 ---
 The tournament was organized by Qingdao Aokofu Water Purification Equipment Co., Ltd, hosted by Qingdao West Coast New District Shanyuan Tennis Club, organized by Baipoly Sporting Goods Trading (Shanghai) Co. -Two Rackets Tennis Club.
 This tournament is the highest level of tennis tournament in Qingdao West Coast, with a total of 40 players participating in the tournament. After 48 matches in one day, Liu Bing and Song Chao won the doubles championship, Sun Jianbo and Zhuang Weiyan won the second place, and Jin Huahui and Long Yun won the third place.
