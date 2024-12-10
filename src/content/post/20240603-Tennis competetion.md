@@ -1,8 +1,8 @@
 ---
 publishDate: 2024-06-03T00:00:00Z
 author: Little Author
-title: Qingdao Invitational Tennis Tournament 2024 - The first "Acerfoto Cup" was held in Qingdao, China!
-excerpt: On June 2, 2024, the first Qingdao Tennis Invitational Tournament of "AOKF Cup" was held at Qingdao West Coast Zoomlion - Two Rackets Tennis Club!
+title: Qingdao Invitational Tennis Tournament 2024 - The first "Oakfull Cup" was held in Qingdao, China!
+excerpt: On June 2, 2024, the first Qingdao Tennis Invitational Tournament of "Oakfull Cup" was held at Qingdao West Coast - Two Rackets Tennis Club!
 image: ~/assets/images/tennis.jpeg
 category: News
 tags:
@@ -11,14 +11,15 @@ tags:
 metadata:
   canonical: https://oakfull.cn/20240603-tennis-competetion
 ---
-The tournament was organized by Qingdao Aokofu Water Purification Equipment Co., Ltd, hosted by Qingdao West Coast New District Shanyuan Tennis Club, organized by Baipoly Sporting Goods Trading (Shanghai) Co. -Two Rackets Tennis Club.
+The tournament was organized by Qingdao Oakfull Water Purifier Co., Ltd, hosted by Qingdao West Coast New District Shanyuan Tennis Club, organized by Baipoly Sporting Goods Trading (Shanghai) Co. -Two Rackets Tennis Club.
+
 This tournament is the highest level of tennis tournament in Qingdao West Coast, with a total of 40 players participating in the tournament. After 48 matches in one day, Liu Bing and Song Chao won the doubles championship, Sun Jianbo and Zhuang Weiyan won the second place, and Jin Huahui and Long Yun won the third place.
 
-As the main sponsor of the tournament, Qingdao Aokofu Water Purification Equipment Co., Ltd. provided good venues, facilities and services as well as exquisite prizes and trophies for the participants. The professional tournament service team ensured the smooth running of the tournament. The person in charge of Qingdao West Coast Shanyuan Tennis Club said that more high-level tennis tournaments will be held in the future, and at the same time, it will strengthen the integration of sports and education, expand the tennis population, introduce the advanced concepts and training methods, and bring together more social power to support and help the development of tennis in Qingdao West Coast.
+As the main sponsor of the tournament, Qingdao Oakfull Water Purifier Co., Ltd. provided good venues, facilities and services as well as exquisite prizes and trophies for the participants. The professional tournament service team ensured the smooth running of the tournament. The person in charge of Qingdao West Coast Shanyuan Tennis Club said that more high-level tennis tournaments will be held in the future, and at the same time, it will strengthen the integration of sports and education, expand the tennis population, introduce the advanced concepts and training methods, and bring together more social power to support and help the development of tennis in Qingdao West Coast.
 
 ## Sponsors
 
-Qingdao OAKFULL Electricity-free Water Purification Co., Ltd. focuses on the research and development of whole-house electricity-free water purification, sitting on 17,000 square meters of modernized factories and trademarks OAKFULL and patents, equipped with independent purification workshop, is the first company in China to develop a hydropower-driven under-the-kitchen electricity-free reverse osmosis water purifier. With more than 10 years of experience in the production of water purification products with Europe, the innovative introduction of non-electric reverse osmosis water purifier flow rate of up to 2.5 liters per minute, performance rivals that of the 1000-gallon large-throughput electric water purifiers. TDS removal rate can be stabilized at about 98%, compared with the common 94% desalination rate of the large-throughput electric purifiers is a significant improvement, to ensure that every drop of water to reach the level of safe and drinkable. This product has been awarded the national level water efficiency certification, the pure waste ratio reaches the optimal standard, high efficiency and energy saving. The same series can be matched with the whole-house water softener without electricity, pre-filter and whole-house water purifier for high-end mansions.
+Qingdao OAKFULL Electricity-free Water Purifier Co., Ltd. focuses on the research and development of whole-house electricity-free water purification, sitting on 17,000 square meters of modernized factories and trademarks OAKFULL and patents, equipped with independent purification workshop, is the first company in China to develop a hydropower-driven under-the-kitchen electricity-free reverse osmosis water purifier. With more than 10 years of experience in the production of water purification products with Europe, the innovative introduction of non-electric reverse osmosis water purifier flow rate of up to 2.5 liters per minute, performance rivals that of the 1000-gallon large-throughput electric water purifiers. TDS removal rate can be stabilized at about 98%, compared with the common 94% desalination rate of the large-throughput electric purifiers is a significant improvement, to ensure that every drop of water to reach the level of safe and drinkable. This product has been awarded the national level water efficiency certification, the pure waste ratio reaches the optimal standard, high efficiency and energy saving. The same series can be matched with the whole-house water softener without electricity, pre-filter and whole-house water purifier for high-end mansions.
 <!-- 
 ## Praesent tellus ad sapien erat or
 
