@@ -5,7 +5,7 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 _Last updated_: 2024-12-06
 
-As a distributor of AOKF, you will enjoy the strong support of a source factory with 30 years of experience. With our high quality products, technological innovation and market reputation, you will easily attract consumers' trust and quickly establish your market position.
+As an agent of Oakfull, you will enjoy the strong support of a source factory with 30 years of experience. With our high quality products, technological innovation and market reputation, you will easily attract consumers' trust and quickly establish your market position.
 
 We provide detailed product information, technical training and marketing support to help you quickly master product features and sales techniques, and ensure that you are able to provide professional service and consultation.
 
@@ -19,5 +19,5 @@ We will provide you with a wealth of marketing resources, including advertising 
 
 We provide perfect after-sales service system and technical support to ensure that customers get timely help and solutions after purchase. Quality after-sales service will enhance customer loyalty and promote secondary sales.
 
-Join us now and become an agent of Aucoff Water Purification, work with us to provide clean and safe drinking water for families and businesses around the world, and start your road to success!
+Join us now and become an agent of Oakfull Water Purifier Co., Ltd, work with us to provide clean and safe drinking water for families and businesses around the world, and start your road to success!
 
