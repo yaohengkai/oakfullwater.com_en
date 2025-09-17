@@ -90,7 +90,7 @@ export const headerData = {
       ],
     },
   ],
-  actions: [{ text: '中文 / EN', href: 'https://cn.oakfull.cn', target: '_blank' }],
+  actions: [{ text: '中文 / EN', href: 'https://cn.oakfullwater.com', target: '_blank' }],
 };
 
 export const footerData = {
